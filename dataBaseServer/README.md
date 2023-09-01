@@ -97,11 +97,11 @@
 }
 ```
 
-## Testing using cypress
-- The main app features code testing(see readme file located in the reactServer folder for more information). 
-- When running tests on cypress run the server using the command; `npm run test:server` so that the tests run on a separate database.
+## Database for testing
+- The react app features code testing(see readme file located in the reactServer folder for more information). 
+- When running tests on cypress run the database server using the command; `npm run test:server` so that the tests run on a separate database.
 - after firing the command `npm run test:server` for the first time go to the url <http://localhost:8001/api/debug/reset> in order to generate the data inside the scheduler_test database
-- for more information on running Jest tests and storybook refer to the README file located in the reactServer folder
+- for more information on running Jest tests and storybook, refer to the README file located in the reactServer folder
 
 ## Dependencies
 - "jest": "^24.8.0"
