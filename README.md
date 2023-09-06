@@ -1,4 +1,4 @@
-# Interview Scheduler
+# Interview Scheduler App
   Interview scheduler app presents a list of week days(excludes weekends). For each day there are slots where a user can book an appointment(provided the slot is available), the user types in their name and selects one of the available interviewers. Any appointment can be edited or deleted from the interface.
 
 ## Setup
@@ -24,7 +24,7 @@
 !["Screenshot of main page"](./docs/main-page.JPG)
 !["Screenshot of creating a new appointment"](./docs/new-appointment.JPG)
 
-## Dependencies
+## Dependencies in reactServer directory
 - "axios": "^0.2.0",
 - "classnames": "^2.2.6",
 - "normalize.css": "^8.0.1",
