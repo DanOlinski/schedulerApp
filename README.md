@@ -22,6 +22,7 @@
 
 ## Final Product
 !["Screenshot of main page"](./reactServer/docs/main-page.JPG)
+...
 !["Screenshot of creating a new appointment"](./reactServer/docs/new-appointment.JPG)
 
 ## Dependencies in reactServer directory
