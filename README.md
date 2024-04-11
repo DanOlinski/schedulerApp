@@ -1,5 +1,5 @@
-# Interview Scheduler App
-  Interview scheduler app presents a list of week days(excludes weekends). For each day there are slots where a user can book an appointment(provided the slot is available), the user types in their name and selects one of the available interviewers. Any appointment can be edited or deleted from the interface.
+# Scheduler App
+  Scheduler app presents a list of week days(excludes weekends). For each day there are slots where a user can book an appointment(provided the slot is available), the user types in their name and selects one of the available interviewers. Any created appointment can be edited or deleted.
 
 ## Setup
   1. Clone this repository onto your local device.
