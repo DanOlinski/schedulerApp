@@ -72,7 +72,7 @@ export default function useApplicationData() {
     
     return axios
       // .put(`http://localhost:8001/api/appointments/${id}`,
-      .put(`http://3.135.190.22:8001/api/appointments/${id}`,
+      .put(`http://54.236.160.67:8001/api/appointments/${id}`,
         appointment
       )
       .then(() => {
@@ -103,7 +103,7 @@ export default function useApplicationData() {
 
     return axios
       // .delete(`http://localhost:8001/api/appointments/${id}`)
-      .delete(`http://3.135.190.22:8001/api/appointments/${id}`)
+      .delete(`http://54.236.160.67:8001/api/appointments/${id}`)
       .then(() => {
         setState({
           ...state,
