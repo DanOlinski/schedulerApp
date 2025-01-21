@@ -1,10 +1,8 @@
 *to do to deploy
-di-figure out how to leave server running w my PC off
--update the repository with the files in this PC
 -get a domain name so that a recruter is not startled with a warning message
 
 # Scheduler App
-  Scheduler app is a fullstack application deployed on AWS, it presents a list of week days(excludes weekends). For each day there are slots where a user can book an appointment(provided the slot is available), the user types in their name and selects one of the available interviewers. Any created appointment can be edited or deleted.
+  Scheduler app is a fullstack application deployed on AWS and uses a github domain name, it presents a list of week days(excludes weekends). For each day there are slots where a user can book an appointment(provided the slot is available), the user types in their name and selects one of the available interviewers. Any created appointment can be edited or deleted.
 
 ## Setup
   1. Clone this repository onto your local device.
