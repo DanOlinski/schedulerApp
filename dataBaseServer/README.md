@@ -2,9 +2,9 @@
  This server holds and serves the data that is displayed in the scheduler app, it is served separately from the client interface react server
 
 ## Create the DB
-1. start postgres with the command `startpostgres`
-2. Use the command `psql -U development` to create the database server in Postgres, with the username `development`. Type in the password `development`.
-3. Create a database with the command `CREATE DATABASE scheduler_development;`.
+1. start postgres with the command `sudo -i -u postgres to start postgres` then `psql` to enter the postgres environment
+2. Run the command `CREATE ROLE development LOGIN PASSWORD 'development';` to create the database user.
+3. Create a database under the new user with the command `CREATE DATABASE scheduler_development WITH OWNER = development;`.
 
 ## Setup
 1. Install server dependencies using the `npm install` command from dataBaseServer directory. 
@@ -13,7 +13,7 @@
 
 ## Routes
 
-- <http://localhost:8001/api/dayst>
+- <http://localhost:8001/api/days>
 
   - Use GET method when performing an API request
 
