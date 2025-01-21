@@ -71,7 +71,8 @@ export default function useApplicationData() {
     const days = updateSpots(appointments);
     
     return axios
-      .put(`http://localhost:8001/api/appointments/${id}`,
+      // .put(`http://localhost:8001/api/appointments/${id}`,
+      .put(`http://3.135.190.22:8001/api/appointments/${id}`,
         appointment
       )
       .then(() => {
@@ -101,7 +102,8 @@ export default function useApplicationData() {
    
 
     return axios
-      .delete(`http://localhost:8001/api/appointments/${id}`)
+      // .delete(`http://localhost:8001/api/appointments/${id}`)
+      .delete(`http://3.135.190.22:8001/api/appointments/${id}`)
       .then(() => {
         setState({
           ...state,
@@ -115,31 +117,46 @@ export default function useApplicationData() {
   const setDay = day => setState((prev) => ({ ...prev, day }));
 
   //API request to the database for days array
+
   useEffect(() => {
-    Promise.all([
-      axios.get("http://localhost:8001/api/days"),
-      axios.get("http://localhost:8001/api/appointments"),
-      axios.get("http://localhost:8001/api/interviewers")
-    ])
-      .then((all) => {
-        setState((prev) => {
-          if (all[0].data) {
-            return ({
-              ...prev,
-              days: all[0].data,
-              appointments: all[1].data,
-              interviewers: all[2].data
+
+    //this axios API request is used to reset the database every time a new user accesses the website, so that there is no accumulation of unexpected info for the next user
+    // axios.get("http://localhost:8001/api/debug/reset")
+    axios.get("http://3.135.190.22:8001/api/debug/reset")
+
+          //as soon as the database is reset all of the default database info is loaded and displayed to the user. Every time the page refreshed the database will go back to the default values
+         .then(() =>{
+
+          Promise.all([
+            // axios.get("http://localhost:8001/api/days"),
+            axios.get("http://3.135.190.22:8001/api/days"),
+            // axios.get("http://localhost:8001/api/appointments"),
+            axios.get("http://3.135.190.22:8001/api/appointments"),
+            // axios.get("http://localhost:8001/api/interviewers")
+            axios.get("http://3.135.190.22:8001/api/interviewers")
+          ])
+            .then((all) => {
+              setState((prev) => {
+                if (all[0].data) {
+                  return ({
+                    ...prev,
+                    days: all[0].data,
+                    appointments: all[1].data,
+                    interviewers: all[2].data
+                  });
+                } else {
+                  return ({
+                    ...prev,
+                    days: all[0],
+                    appointments: all[1],
+                    interviewers: all[2]
+                  });
+                }
+              });
             });
-          } else {
-            return ({
-              ...prev,
-              days: all[0],
-              appointments: all[1],
-              interviewers: all[2]
-            });
-          }
-        });
-      });
+      
+
+         })
 
     
   },[]);

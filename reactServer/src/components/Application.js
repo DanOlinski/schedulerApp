@@ -42,7 +42,7 @@ export default function Application() {
   });
 
   //inside nav element add DayList(this element renders one button per each object in an array, this array is defined as "days" declared as an attribute witch is a prop that is then accessed by the elements created within the DayList element)
-  
+
   return (
     <main className="layout">
       
