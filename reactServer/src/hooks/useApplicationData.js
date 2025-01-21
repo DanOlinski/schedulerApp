@@ -122,18 +122,18 @@ export default function useApplicationData() {
 
     //this axios API request is used to reset the database every time a new user accesses the website, so that there is no accumulation of unexpected info for the next user
     // axios.get("http://localhost:8001/api/debug/reset")
-    axios.get("http://3.135.190.22:8001/api/debug/reset")
+    axios.get("http://54.236.160.67:8001/api/debug/reset")
 
           //as soon as the database is reset all of the default database info is loaded and displayed to the user. Every time the page refreshed the database will go back to the default values
          .then(() =>{
 
           Promise.all([
             // axios.get("http://localhost:8001/api/days"),
-            axios.get("http://3.135.190.22:8001/api/days"),
+            axios.get("http://54.236.160.67:8001/api/days"),
             // axios.get("http://localhost:8001/api/appointments"),
-            axios.get("http://3.135.190.22:8001/api/appointments"),
+            axios.get("http://54.236.160.67:8001/api/appointments"),
             // axios.get("http://localhost:8001/api/interviewers")
-            axios.get("http://3.135.190.22:8001/api/interviewers")
+            axios.get("http://54.236.160.67:8001/api/interviewers")
           ])
             .then((all) => {
               setState((prev) => {
