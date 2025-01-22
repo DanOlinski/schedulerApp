@@ -2,7 +2,7 @@
 -get a domain name so that a recruter is not startled with a warning message
 
 # Scheduler App
-  Scheduler app is a fullstack application deployed on AWS and uses a github domain name, it presents a list of week days(excludes weekends). For each day there are slots where a user can book an appointment(provided the slot is available), the user types in their name and selects one of the available interviewers. Any created appointment can be edited or deleted.
+  Scheduler app is a fullstack application deployed on AWS, it presents a list of week days(excludes weekends). For each day there are slots where a user can book an appointment(provided the slot is available), the user types in their name and selects one of the available interviewers. Any created appointment can be edited or deleted.
 
 ## Setup
   1. Clone this repository onto your local device.
@@ -12,7 +12,6 @@
   5. Start the client web server(in a separate terminal) using the `npm start` command from reactServer directory. The client interface app will be served at <http://localhost:8000/>.
   6. Go to <http://localhost:8000/> in your browser and check out the features of this web page.
   7. If you are running the local host go to the file `useApplicationData.js` located in folder `hooks` and update all of the end points to use <http://localhost:8000
-  8. When running the app locally there might be an issue loading the images. This is due to the 1st line of code in the package.json `"homepage": "http://schedulerapp.io/schedulerapp",`, that line of code was placed there for deployment, you can remove it while working locally, in case the images aren't loading.
 
 ## Running Tests
   - This app is setup with testing capabilities for both jest and cypress.
