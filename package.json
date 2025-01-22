@@ -1,5 +1,4 @@
 {
-  "homepage": "http://schedulerapp.io/schedulerapp",
   "name": "scheduler",
   "version": "0.1.0",
   "private": true,
@@ -55,6 +54,5 @@
       "<rootDir>/node_modules/",
       "<rootDir>/.git/"
     ]
-  },
-  "proxy": "http://localhost:8001"
+  }
 }
