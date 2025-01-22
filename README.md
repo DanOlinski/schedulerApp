@@ -1,4 +1,4 @@
-# Scheduler App
+## Scheduler App
   Scheduler app is a fullstack application deployed on AWS, it presents a list of week days(excludes weekends). For each day there are slots where a user can book an appointment(provided the slot is available), the user types in their name and selects one of the available interviewers. Any created appointment can be edited or deleted.
 
 ## Setup
