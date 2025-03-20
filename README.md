@@ -3,7 +3,7 @@
 
 ## Setup
   1. Clone this repository onto your local device.
-  2. Install dependencies using the `npm install` command from reactServer directory. Make sure to use node version 16
+  2. Install dependencies using the `npm install` command from root. Make sure to use node version 16
   3. Follow the setup instructions for serving the database located in the README file that is within the dataBaseServer directory.
   4. Start the database server using the `npm start` command from within dataBaseServer directory. The database will be served at <http://localhost:8001/>.
   5. Start the client web server(in a separate terminal) using the `npm start` command from reactServer directory. The client interface app will be served at <http://localhost:8000/>.
