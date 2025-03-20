@@ -6,7 +6,7 @@
   2. Install dependencies using the `npm install` command from root. Make sure to use node version 16
   3. Follow the setup instructions for serving the database located in the README file that is within the dataBaseServer directory.
   4. Start the database server using the `npm start` command from within dataBaseServer directory. The database will be served at <http://localhost:8001/>.
-  5. Start the client web server(in a separate terminal) using the `npm start` command from reactServer directory. The client interface app will be served at <http://localhost:8000/>.
+  5. Start the client web server(in a separate terminal) using the `npm start` command from root directory. The client interface app will be served at <http://localhost:8000/>.
   6. Go to <http://localhost:8000/> in your browser and check out the features of this web page.
   7. If you are running the local host go to the file `useApplicationData.js` located in folder `hooks` and update all of the end points to use <http://localhost:8000
 
