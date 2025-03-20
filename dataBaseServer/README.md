@@ -2,7 +2,7 @@
  This server holds and serves the data that is displayed in the scheduler app, it is served separately from the client interface react server
 
 ## Create the DB
-1. start postgres with the command `sudo -i -u postgres to start postgres` then `psql` to enter the postgres environment
+1. start postgres with the command `sudo -i -u postgres to start postgres` then `psql` (or sudo -u postgres psql postgres) to enter the postgres environment
 2. Run the command `CREATE ROLE development LOGIN PASSWORD 'development';` to create the database user.
 3. Create a database under the new user with the command `CREATE DATABASE scheduler_development WITH OWNER = development;`.
 
