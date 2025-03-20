@@ -72,7 +72,7 @@ export default function useApplicationData() {
     
     return axios
       // .put(`http://localhost:8001/api/appointments/${id}`,
-      .put(`http://54.236.160.67:8001/api/appointments/${id}`,
+      .put(`http://54.89.216.37:8001/api/appointments/${id}`,
         appointment
       )
       .then(() => {
@@ -103,7 +103,7 @@ export default function useApplicationData() {
 
     return axios
       // .delete(`http://localhost:8001/api/appointments/${id}`)
-      .delete(`http://54.236.160.67:8001/api/appointments/${id}`)
+      .delete(`http://54.89.216.37:8001/api/appointments/${id}`)
       .then(() => {
         setState({
           ...state,
@@ -122,18 +122,18 @@ export default function useApplicationData() {
 
     //this axios API request is used to reset the database every time a new user accesses the website, so that there is no accumulation of unexpected info for the next user
     // axios.get("http://localhost:8001/api/debug/reset")
-    axios.get("http://54.236.160.67:8001/api/debug/reset")
+    axios.get("http://54.89.216.37:8001/api/debug/reset")
 
           //as soon as the database is reset all of the default database info is loaded and displayed to the user. Every time the page refreshed the database will go back to the default values
          .then(() =>{
 
           Promise.all([
             // axios.get("http://localhost:8001/api/days"),
-            axios.get("http://54.236.160.67:8001/api/days"),
+            axios.get("http://54.89.216.37:8001/api/days"),
             // axios.get("http://localhost:8001/api/appointments"),
-            axios.get("http://54.236.160.67:8001/api/appointments"),
+            axios.get("http://54.89.216.37:8001/api/appointments"),
             // axios.get("http://localhost:8001/api/interviewers")
-            axios.get("http://54.236.160.67:8001/api/interviewers")
+            axios.get("http://54.89.216.37:8001/api/interviewers")
           ])
             .then((all) => {
               setState((prev) => {
