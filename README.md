@@ -22,11 +22,11 @@
 - To run storybook use the command `npm run storybook` from withing the reactServer directory, then go to url http://localhost:9009/
 
 ## Final Product
-!["Screenshot of main page"](./reactServer/docs/main-page.JPG)
+!["Screenshot of main page"](./docs/main-page.JPG)
 - ...
 - ...
 - ...
-!["Screenshot of creating a new appointment"](./reactServer/docs/new-appointment.JPG)
+!["Screenshot of creating a new appointment"](./docs/new-appointment.JPG)
 
 ## Dependencies in reactServer directory
 - "axios": "^0.2.0",
