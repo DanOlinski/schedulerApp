@@ -4,7 +4,7 @@ import axios from "axios";
 //Manages the state changes from the component rendered in Application.js file
 export default function useApplicationData() {
 
-  const endPoint = 'http://18.219.28.223:8001'
+  const endPoint = 'http://3.21.233.24:8001/'
 
   //setting the default states
   const [state, setState] = useState({
